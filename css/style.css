@@ -11,48 +11,49 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     color: #533738;
+    background-color: #E5E5E5;
 }
 
 
 header {
     width:1400px;
-    height: 715px;
+    height: 85px;
     background-image: url(../img/header.png);
     background-size: 1400px 715px;
-    margin:0 auto;
+   
+  
+  
 }
 
 .nav-header {
     font-size: 16px;
-    line-height: 20px;
+    line-height: 40px;
+    padding: 38px 116px 94px 99px;
+    
 }
+
 
 .nav-header a {
     text-decoration: none;
     color:#533738;
 }
 
-ul {
-    list-style: none;
+.list-menu-header {
+    list-style: none; 
 }
 
-h1 {
-    font-size: 50px;
-    line-height: 62px;
+
+.text-main {
+    width:1400px;
+    height: 630px;   
 }
 
-h2 {
-    font-size: 40px;
-    line-height: 50px;
-    text-transform: uppercase;
-}
-
-.text-header p {
+.text-main p {
     font-size: 18px;
     line-height: 30px;
 }
 
-.text-header a {
+.text-main a {
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
@@ -62,33 +63,44 @@ h2 {
     padding: 24px 66px 25px 66px;
 }
 
-main {
+h1 {
+    font-size: 50px;
+    line-height: 62px;
+}
+
+
+.about-us {
     width:1400px;
     height: 914px;  
     margin:0 auto;
-    background-color: #E5E5E5; 
+     
 }
 
 
+h2 {
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
 
-.text-main p {
+
+.text-about-us p {
     font-size: 18px;
     line-height: 30px;
+}
+
+.box-about-us {
+    width: 1400px;
+    height: 273px;
+    background-color: #8D7370;
     
 }
 
-.box-main {
-    width: 1400px;
-    height: 273px;
-    background-color: #8D7370;;
-}
 
-
-.box2-main {
+.box2-about-us {
     font-size: 50px;
     line-height: 62px;
     color: #FFFFFF;
-    
 }
 
 .slader-section {
