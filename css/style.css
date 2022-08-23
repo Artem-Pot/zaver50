@@ -14,43 +14,82 @@ body {
     background-color: #E5E5E5;
 }
 
-
+/* Блок header*/
 header {
     width:1400px;
     height: 85px;
-    background-image: url(../img/header.png);
-    background-size: 1400px 715px;
-   
-  
+    display: flex;
+    align-items:center;
   
 }
 
 .nav-header {
     font-size: 16px;
     line-height: 40px;
-    padding: 38px 116px 94px 99px;
+    display: flex;
+    justify-content: space-between; 
+    
+    
+}
+
+.logo-header img{
+    vertical-align: middle;
+  }
+
+.logo-header {
+    margin-left:99px;
+    margin-right: 89px;
+    display: flex;
+    flex-direction: column ;
+    
+}
+.nav-header a {
+    text-decoration: none;
+    color:#533738;
+    
+}
+
+.list-menu-header{
+    list-style: none;
+    display: flex;  
+    
+}
+
+.li-menu-header:not(:last-of-type) {
+    margin-right:26px;
     
 }
 
 
-.nav-header a {
-    text-decoration: none;
-    color:#533738;
+.tel-header {
+    margin-left: 46px; 
+      
+
 }
 
-.list-menu-header {
-    list-style: none; 
-}
 
+
+/* Блок main*/
+.main {
+    width:1400px;
+    height: 630px;
+    border: 1px solid rgb(73, 29, 194);   
+}
 
 .text-main {
-    width:1400px;
-    height: 630px;   
+    width:540px;
+    height: 100%;
+    max-height: 500px;
+    border: 1px solid red; 
+    margin-left: 185px;
+    margin-top: 67px;  
 }
+
 
 .text-main p {
     font-size: 18px;
     line-height: 30px;
+    
 }
 
 .text-main a {
@@ -61,12 +100,20 @@ header {
     background-color: #CC8B86;
     text-decoration: none;
     padding: 24px 66px 25px 66px;
+    
 }
 
-h1 {
+.button-main {
+    margin-top: 21px;
+    
+}
+
+.text-main h1 {
     font-size: 50px;
     line-height: 62px;
+    margin-bottom: 24px;
 }
+
 
 
 .about-us {
