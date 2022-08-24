@@ -12,15 +12,29 @@ body {
     font-weight: 400;
     color: #533738;
     background-color: #E5E5E5;
+    background-image: url("../img/header.png");
+    background-repeat:no-repeat;
+    background-position: top;
+    
 }
 
-/* Блок header*/
+code {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #533738;
+
+}
+
+/* ----------------Блок header------------------*/
 header {
     width:1400px;
     height: 85px;
     display: flex;
     align-items:center;
-  
+    
+    
 }
 
 .nav-header {
@@ -63,32 +77,48 @@ header {
 
 .tel-header {
     margin-left: 46px; 
-      
 
 }
 
 
 
-/* Блок main*/
+/* -----------------Блок main---------------*/
 .main {
     width:1400px;
     height: 630px;
-    border: 1px solid rgb(73, 29, 194);   
 }
 
 .text-main {
-    width:540px;
+    width:534px;
     height: 100%;
     max-height: 500px;
-    border: 1px solid red; 
     margin-left: 185px;
-    margin-top: 67px;  
+    padding-top: 67px;  
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 62px;
+    margin-bottom: 24px;
+    font-weight: 400;
+    width: 493px;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    padding-top:65px;
+    text-transform:uppercase;
+    font-weight: 400;
+    
 }
 
 
 .text-main p {
     font-size: 18px;
     line-height: 30px;
+    width: 493px;
     
 }
 
@@ -104,66 +134,100 @@ header {
 }
 
 .button-main {
-    margin-top: 21px;
+    margin-top: 46px;
     
 }
 
-.text-main h1 {
-    font-size: 50px;
-    line-height: 62px;
-    margin-bottom: 24px;
-}
-
-
+/* ---------------------Блок about-us------------------ */
 
 .about-us {
     width:1400px;
     height: 914px;  
     margin:0 auto;
-     
+    
 }
 
-
-h2 {
-    font-size: 40px;
-    line-height: 50px;
-    text-transform: uppercase;
+.box-about-us {
+    height: 641px;
+    width: 1400px;
+    
 }
 
+.box-box-about-us {
+    margin-top: 40px;
+    display: flex;
+    justify-content:center;
+}
 
 .text-about-us p {
     font-size: 18px;
     line-height: 30px;
+    width: 528px;
+    margin-left: 62px;
 }
 
-.box-about-us {
+.numbers-about-us {
     width: 1400px;
     height: 273px;
     background-color: #8D7370;
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
     
 }
 
+.box1-about-us {
+    display: flex;
+    align-items:center;
+    flex-direction:column;
+
+}
 
 .box2-about-us {
     font-size: 50px;
     line-height: 62px;
     color: #FFFFFF;
+    text-transform:uppercase;
+    
+}
+
+/* -----------------Блок slader------------------ */
+
+.slaider {
+    width: 1400px;
+    height: 1229px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.slaider h2 {
+    align-self:start;
+    padding: 65px 0 40px 100px;
 }
 
 .slader-section {
-    background-image: url("../img/image 55.png");
-    background-size: 451px 488px;
-    background-repeat: no-repeat;
-    opacity: 0.8;
+    display:grid;
+    grid-template-areas:"slaider1 slaider2"
+                        "slaider3 slaider4";
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:451px 451px;
+    gap:30px 20px;
+    
 }
 
-
 .text-slaider {
-    width: 451px;
-    height: 488px;
-    background-color: rgb(100, 72, 69, 0.8);
-    text-align: center;
-    color: #FFFFFF;
+    width:488px ;
+    height:451px ;
+    background-image: url("../img/image 55.png");
+    background-repeat: no-repeat;
+    grid-area:slaider1;
+    grid-column:1/6;
+}
+
+.text-slaider:hover, .slader-section img:hover {
+    opacity: 0.5;  
 }
 
 .h3-text-slaider {
@@ -172,23 +236,112 @@ h2 {
     line-height: 37px;
 }
 
+
 .p-slaider {
     font-size: 18px;
-    line-height: 30px;   
+    line-height: 30px; 
+    color:#C4C4C4;  
 }
 
+
+.img-slaider2 {
+    grid-area:slaider2;
+    grid-column:6/13;
+    
+}
+
+.img-slaider3 {
+    grid-area:slaider3;
+    grid-column:1/8;
+}
+
+.img-slaider4 {
+    grid-area:slaider4;
+    grid-column:8/13;
+}
 
 .span-slaider a {
     font-weight: 500;
     font-size: 30px;
     line-height: 37px;
     color: #533738;
-    text-decoration: none;
+    text-decoration: none; 
 }
 
-figcaption {
+.span-slaider {
+    padding: 40px 0 65px;
+
+}
+
+
+/* -----------Блок comanda-rabota-------------- */
+.comanda-rabota {
+    height: 998px;
+    margin: 0 auto;
+    background: #E2C4BA;
+}
+
+/* --Блок comanda-- */
+
+.comanda {
+    width: 1020px;
+    margin: 0 auto;
+}
+
+.comanda h2 {
+    padding-top: 50px;
+    padding-bottom: 42px;
+}
+
+.block-comanda {
+    display: flex;
+    justify-content:space-between;  
+}
+
+.text-img-comanda {
+    display: flex;
+    flex-direction:column;
+    margin-right: 38px;
+}
+
+.text-comanda {
+    width: 320px;
+    display: block;
+    padding-top: 10px;
+    
     font-size: 18px;
     line-height: 30px;
+    color: #533738;
+}
+
+/* --Блок rabota-- */
+
+.rabota {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction:column;
+}
+
+.rabota h2 {
+padding-bottom: 40px;
+
+}
+
+
+.block-rabota {
+    display: flex;
+    justify-content:space-between;
+
+}
+
+
+.text-img-rabota {
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    width: 285px;
+    
 }
 
 .img-rabota {
@@ -196,20 +349,36 @@ figcaption {
     height: 70px;
     border-radius: 35px;
     background: #8D7370;
+    margin-bottom: 20px;
+
+}
+
+.text-span-rabota {
+    
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 70px;
+    color: #FFFFFF;
+    padding-left: 26px;
+    
 }
 
 .text-rabota {
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 30px;
-    color: #d8cfcf;
     text-align: center;
-    vertical-align:middle;
+    font-size: 18px;
+    line-height: 30px;
+    color: #533738;
+    
+
 }
 
-.figcaption-rabota {
-    width: 285px;
-    height: 120px;
+
+/* -----------Блок reviews-------------- */
+
+.rabota {
+    display: flex;
+    justify-content:space-between; 
+
 }
 
 .text-reviews p {
@@ -269,6 +438,7 @@ button {
     border: none;
     
 }
+
 
 footer {
 height: 104px;

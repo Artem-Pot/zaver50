@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     <title>Страница марафона 5.0</title>
 </head>
 <body>
@@ -35,8 +35,9 @@
      <main class="main">
         <div class="text-main">
                 <h1>Поможем сделать вашу квартиру уютнее</h1>
-                <p>Подбираем текстиль, мебель и аксессуары под ваш интерьер, 
-                        находим магазины и помогаем организовать доставку</p>
+                <p>Подбираем текстиль, мебель и аксессуары <br>
+                    под ваш интерьер, находим магазины<br>
+                    и помогаем организовать доставку</p>
                 <div class="button-main">
                     <a href="#application">Оставить заявку</a>
                 </div>
@@ -45,97 +46,111 @@
    
 
     <section class="about-us" id="about-us">
-        <h2>О нас</h2>
-        <img src="img/about-us.png" alt="Столовые приботы на столе" height="465" width="auto">
-        <div class="text-about-us">
-            <p>Премиальный европейский текстиль — одно из самых главных направлений работы 
-                коллектива. Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя 
-                внимание мельчайшим деталям — вот то,  что по-настоящему вдохновляет дизайнеров 
-                нашей студии.</p>
-            <p>Наш коллектив сделает все, чтобы после сотрудничества с нами,  Вам было приятно 
-                сказать:<q> Да! Это именно то, что действительно достойно моего дома!</q></p>
-        </div>
         <div class="box-about-us">
+            <h2 class="h2">О нас</h2>
+                <div class="box-box-about-us">
+                    <img src="img/about-us.png" alt="Столовые приботы на столе" height="465" width="auto">
+                    <div class="text-about-us">
+                        <p>Премиальный европейский текстиль — одно из самых главных направлений работы 
+                            коллектива. Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя 
+                            внимание мельчайшим деталям — вот то,  что по-настоящему вдохновляет дизайнеров 
+                            нашей студии.</p>
+                        <p>Наш коллектив сделает все, чтобы после сотрудничества с нами,  Вам было приятно 
+                            сказать:<q> Да! Это именно то, что действительно достойно моего дома!</q></p>
+                        </div>       
+                </div>
+        </div>
+        <div class="numbers-about-us">
             <div class="box1-about-us">
                 <span class="box2-about-us">5</span>
-                <span class="box2-about-us">100</span>
-                <span class="box2-about-us">10</span>
+                <span class="box2-about-us">Лет опыта</span>
             </div>
             <div class="box1-about-us">
-                <span class="box2-about-us">Лет опыта</span>
+                <span class="box2-about-us">100</span>
                 <span class="box2-about-us">Проектов</span>
+            </div>
+            <div class="box1-about-us">
+                <span class="box2-about-us">10</span>
                 <span class="box2-about-us">Наград</span>
             </div>
         </div>
     </section >
 
 
-
     <section class="slaider" id="Portfolio">
         <h2 >Наши работы</h2>
         <div class="slader-section">
             <div class="text-slaider">
-                <h3 class="h3-text-slaider">Квартира-студия<br>30 кв.м.</h1>
+                <!-- <h3 class="h3-text-slaider">Квартира-студия<br>30 кв.м.</h1>
                     <p class="p-slaider">В квартире были светлые стены и тёплые цвета. Мы 
                         сконцентрировались на отсылках к природе и сделали ребятам уютный 
-                        интерьер, отсылающий к виллам островов Бали.</p>
+                        интерьер, отсылающий к виллам островов Бали.</p> -->
             </div>
-            <img src="img/Rectangle 134.png" alt="Кухня" width="692" height="451">
-            <img src="img/Rectangle 132.png" alt="Комната с диваном и стулом" width="692" height="451">
-            <img src="img/image 56.png" alt="Ванна в коричневых тонах" width="488" height="451">
+            <img class="img-slaider2" src="img/Rectangle 134.png" alt="Кухня" width="692" height="451">
+            <img class="img-slaider3" src="img/Rectangle 132.png" alt="Комната с диваном и стулом" width="692" height="451">
+            <img class="img-slaider4" src="img/image 56.png" alt="Ванна в коричневых тонах" width="488" height="451">
         </div>
-        <span class="span-slaider"><a href="#">Смотреть ещё</a><img src="img/Arrow 3.png" alt="стрелка вправо"></span>
+        <span class="span-slaider"><a href="#">Смотреть ещё&nbsp<img src="img/Arrow 3.png" alt="стрелка вправо"></a></span>
     </section>
+
 
     <section class="comanda-rabota">
         <div class="comanda" id="comanda">
             <h2>Команда</h2>
-                <div class="img-text-comanda">
-                    <figure>
+                <div class="block-comanda">
+
+                    <div class="text-img-comanda">
                         <img src="img/image 61.png" alt="Портрет Маши" height="253" width="320">
-                        <figcaption>Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, 
-                            приезжает к вам домой, общается и помогает сделать вашу квартиру красивой 
-                            и уютной.</figcaption>
-                    </figure>
-                    <figure>
+                        <span class="text-comanda"><code>Это Маша, наш главный 
+                                                    дизайнер. Она отвечает за 
+                                                    дизайн-проект, приезжает к вам 
+                                                    домой, общается 
+                                                    и помогает сделать вашу 
+                                                    квартиру красивой и уютной.</code></span>
+                    </div>
+
+                    <div class="text-img-comanda">
                         <img src="img/image 59.png" alt="Портрет Cаши" height="253" width="320">
-                        <figcaption>Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, 
-                            приезжает к вам домой, общается и помогает сделать вашу квартиру красивой 
-                            и уютной.</figcaption>
-                    </figure>
-                    <figure>
+                        <span class="text-comanda"><code>С нашим менеджером Сашей вы 
+                                                    познакомитесь в первую 
+                                                    очередь. Она проконсультирует 
+                                                    вас, соберёт все документы
+                                                    и ответит на все вопросы.</code></span>
+                    </div>
+
+                    <div class="text-img-comanda">
                         <img src="img/image 58.png" alt="Портрет Кати" height="253" width="320">
-                        <figcaption>Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, 
-                            приезжает к вам домой, общается и помогает сделать вашу квартиру красивой 
-                            и уютной.</figcaption>
-                    </figure>
+                        <span class="text-comanda"><code>Катя тоже занимается дизайном.
+                                                    Она всегда находит общий язык
+                                                    с клиентами и точно знает,
+                                                    как обустроить дом так, чтобы 
+                                                    вам понравилось.</code></span>
+                    </div>
             </div>
         </div>
 
         <div class="rabota" id="rabota">
             <h2>Как мы работаем</h2>
-                <div class="img-text-rabota">
-                    <figure>
-                        <div class="img-rabota"><span class="text-rabota">1</span></div>
-                        <figcaption class="figcaption-rabota">Знакомимся, выезжаем на объект, утверждаем концепцию, подписываем договор.</figcaption>
-                    </figure>
+                <div class="block-rabota">
+                    <div class="text-img-rabota">
+                        <div class="img-rabota"><span class="text-span-rabota">1</span></div>
+                        <span class="text-rabota">Знакомимся, выезжаем на объект, утверждаем концепцию, подписываем договор.</span>
+                    </div>
 
-                    <figure>
-                        <div class="img-rabota"><span class="text-rabota">2</span></div>
-                        <figcaption class="figcaption-rabota">Подбираем мебель, текстиль, аксессуары. Делаем 3D- визуализацию.
-                        </figcaption>
-                    </figure>
+                    <div class="text-img-rabota">
+                        <div class="img-rabota"><span class="text-span-rabota">2</span></div>
+                        <span class="text-rabota">Подбираем мебель, текстиль, аксессуары. Делаем 3D- визуализацию.</span>
+                    </div>
 
-                    <figure>
-                        <div class="img-rabota"><span class="text-rabota">3</span></div>
-                        <figcaption class="figcaption-rabota">Находим нужные магазины, помогаем с доставкой и оплатой товаров.</figcaption>
-                    </figure>
+                    <div class="text-img-rabota">
+                        <div class="img-rabota"><span class="text-span-rabota">3</span></div>
+                        <span class="text-rabota">Находим нужные магазины, помогаем с доставкой и оплатой товаров.</span>
+                    </div>
 
-                    <figure>
-                        <div class="img-rabota"><span class="text-rabota">4</span></div>
-                        <figcaption>Воплощаем проект в жизнь:
-                            расставляем мебель и цветы, вешаем шторы, находим места для мелочей</figcaption>
-                    </figure>
+                    <div class="text-img-rabota">
+                        <div class="img-rabota"><span class="text-span-rabota">4</span></div>
+                        <span class="text-rabota">Воплощаем проект в жизнь: расставляем мебель и цветы, вешаем шторы, находим места для мелочей</span>
+                    </div>
             </div>
         </div>
     </section>
