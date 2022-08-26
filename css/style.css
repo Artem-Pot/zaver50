@@ -3,7 +3,6 @@
     padding: 0;
 }
 
-
 body {
     width:1400px;
     height: 100%;
@@ -15,10 +14,7 @@ body {
     background-image: url("../img/header.png");
     background-repeat:no-repeat;
     background-position: top;
-    
 }
-
-
 
 /* ----------------Блок header------------------*/
 header {
@@ -26,8 +22,6 @@ header {
     height: 85px;
     display: flex;
     align-items:center;
-    
-    
 }
 
 .nav-header {
@@ -35,46 +29,40 @@ header {
     line-height: 40px;
     display: flex;
     justify-content: space-between; 
-    
-    
 }
-
-.logo-header img{
-    vertical-align: middle;
-  }
 
 .logo-header {
     margin-left:99px;
     margin-right: 89px;
     display: flex;
-    flex-direction: column ;
-    
+    align-items:center;
+}   
+
+.img-logo{
+    height:25px;
+    width:25px;
+    background-image:url("../img/logo.png");
+    background-repeat:no-repeat; 
 }
+
 .nav-header a {
     text-decoration: none;
     color:#533738;
-    
 }
 
 .list-menu-header{
     list-style: none;
     display: flex;  
-    
 }
 
 .li-menu-header:not(:last-of-type) {
     margin-right:26px;
-    
 }
 
 
 .tel-header {
     margin-left: 46px; 
-
 }
-
-
-
 /* -----------------Блок main---------------*/
 .main {
     width:1400px;
@@ -105,12 +93,10 @@ h2 {
     font-weight: 400;
 }
 
-
 .h2-about-us {
     text-align: center;
     padding-top:65px;
 }
-
 
 .text-main p {
     font-size: 18px;
@@ -131,22 +117,18 @@ h2 {
 
 .button-main {
     margin-top: 46px;
-    
 }
-
 /* ---------------------Блок about-us------------------ */
 
 .about-us {
     width:1400px;
     height: 914px;  
     margin:0 auto;
-    
 }
 
 .box-about-us {
     height: 641px;
     width: 1400px;
-    
 }
 
 .box-box-about-us {
@@ -160,6 +142,7 @@ h2 {
     line-height: 30px;
     width: 528px;
     margin-left: 62px;
+    margin-bottom: 20px;
 }
 
 .numbers-about-us {
@@ -169,24 +152,29 @@ h2 {
     display: flex;
     justify-content:space-evenly;
     align-items:center;
-    
-}
-
-.box1-about-us {
-    display: flex;
-    align-items:center;
-    flex-direction:column;
-
 }
 
 .box2-about-us {
+    display: flex;
+    align-items:center;
+    flex-direction:column;
+}
+
+.box-figure-about-us {
     font-size: 50px;
     line-height: 62px;
     color: #FFFFFF;
     text-transform:uppercase;
-    
+    padding-bottom: 8px;
 }
 
+.box-text-about-us {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    color: #FFFFFF;
+    text-transform:uppercase;
+}
 /* -----------------Блок slader------------------ */
 
 .slaider {
@@ -210,42 +198,26 @@ h2 {
     grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows:451px 451px;
     gap:30px 20px;
-    
 }
 
-.text-slaider {
+
+/*-------Слайд с hover эффектом----------*/
+.hover-slaider {
     width:488px ;
     height:451px ;
     background-image: url("../img/image 55.png");
     background-repeat: no-repeat;
     grid-area:slaider1;
     grid-column:1/6;
-    
 }
 
-.text-slaider:hover, .slader-section img:hover {
-    opacity: 0.5; 
-    
+.hover-slaider:hover {
+    background-image: url("../img/hover.png");    
 }
-
-.h3-text-slaider {
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 37px;
-}
-
-
-.p-slaider {
-    font-size: 18px;
-    line-height: 30px; 
-    color:#C4C4C4;  
-}
-
 
 .img-slaider2 {
     grid-area:slaider2;
     grid-column:6/13;
-    
 }
 
 .img-slaider3 {
@@ -258,27 +230,37 @@ h2 {
     grid-column:8/13;
 }
 
-.span-slaider a {
+.box-slaider a {
     font-weight: 500;
     font-size: 30px;
     line-height: 37px;
     color: #533738;
-    text-decoration: none; 
+    text-decoration: none;
+    display: block;
 }
 
-.span-slaider {
+.box-slaider{
     padding: 40px 0 65px;
-
+    display: flex;
+    width: 296px;
+    height: 37px; 
 }
 
-
+.arrow-slaider {
+    width: 61px; 
+    height:16px;
+    background-image:url("../img/Arrow 3.png");
+    background-repeat:no-repeat; 
+    margin-top: 11px;
+    margin-left: 10px;
+    cursor:pointer;
+}
 /* -----------Блок comanda-rabota-------------- */
 .comanda-rabota {
     height: 998px;
     margin: 0 auto;
     background: #E2C4BA;
 }
-
 /* --Блок comanda-- */
 
 .comanda {
@@ -306,7 +288,6 @@ h2 {
     width: 320px;
     display: block;
     padding-top: 10px;
-    
     font-size: 18px;
     line-height: 30px;
     color: #533738;
@@ -322,15 +303,14 @@ h2 {
 }
 
 .rabota h2 {
-margin-top: 35px;
-margin-bottom: 40px;
+    margin-top: 35px;
+    margin-bottom: 40px;
 }
 
 
 .block-rabota {
     display: flex;
     justify-content:space-between;
-
 }
 
 
@@ -339,7 +319,6 @@ margin-bottom: 40px;
     flex-direction:column;
     align-items:center;
     width: 285px;
-    
 }
 
 .img-rabota {
@@ -349,7 +328,6 @@ margin-bottom: 40px;
     background: #8D7370;
     margin-bottom: 20px;
     position:relative;
-
 }
 
 .text-span-rabota {
@@ -360,8 +338,7 @@ margin-bottom: 40px;
     color: #FFFFFF;
     position:absolute;
     top:20px;
-    left: 26px;
-    
+    left: 25px;
 }
 
 .text-rabota {
@@ -370,8 +347,6 @@ margin-bottom: 40px;
     line-height: 30px;
     color: #533738;
 }
-
-
 /* -----------Блок reviews Отзывы-------------- */
 .reviews {
     height:788px;
@@ -384,8 +359,8 @@ margin-bottom: 40px;
 }
 
 .box-reviews {
-  display:flex;
-  justify-content:center;  
+    display:flex;
+    justify-content:center;  
 }
 
 .img-box-reviews { /*Стрелки*/
@@ -393,14 +368,35 @@ margin-bottom: 40px;
     width: 70px;
     height: 70px;
     border-radius: 35px;
-    background: #8D7370;
+    background: #CC8B86;
     margin:236px 29px auto 29px;
+    cursor:pointer;
+    
 }
 
-.img-box-reviews img {
+.img-arrow-reviews {
+    width: 61px; 
+    height:16px;
+    background-image:url("../img/Arrow 2.png");
+    background-repeat:no-repeat; 
     position:absolute;
     top:28px;
-    left: 20px;
+    left: 19px;
+}
+
+.img-arrow-reviews a{
+    display: block;
+
+}
+
+.img2-arrow-reviews {
+    width: 61px; 
+    height:16px;
+    background-image:url("../img/Arrow 1.png");
+    background-repeat:no-repeat; 
+    position:absolute;
+    top:28px;
+    left: 18px;
 }
 
 .slader-reviews {
@@ -430,8 +426,6 @@ margin-bottom: 40px;
     flex-direction:column;
     padding-bottom: 20px;
 }
-
-
 /* -----------Блок application Форма обратной связи-------------- */
 
 .application {
@@ -448,7 +442,6 @@ margin-bottom: 40px;
     height: 100%;
     margin-right: 20px;
     margin-left: 182px;
-
 }
 
 .box-application h2 {
@@ -467,14 +460,14 @@ margin-bottom: 40px;
 }
 
 .text-input {
-font-size: 18px;
-line-height: 30px;
-color: #F6EDE9;
-background-color: #8D7370;
-border: none;
-border-bottom: 1px solid #fff;
-margin-bottom: 31px;
-font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: #F6EDE9;
+    background-color: #8D7370;
+    border: none;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 31px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 button {
@@ -487,23 +480,19 @@ button {
     width: 310px;
     border: none;
     font-family: 'Montserrat', sans-serif;
-    
 }
-
 /* -----------Блок footer-------------- */
 footer {
-height: 104px;
-width: 1400px;
-display:flex;
-align-items:center;
-font-size: 18px;
-line-height: 30px;
-
+    height: 104px;
+    width: 1400px;
+    display:flex;
+    align-items:center;
+    font-size: 18px;
+    line-height: 30px;
 }
 
-
 .text-tel-footer {
-padding-left: 100px;
+    padding-left: 100px;
 }
 
 .text-city-footer {
