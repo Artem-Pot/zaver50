@@ -14,6 +14,8 @@ body {
     background-image: url("../img/header.png");
     background-repeat:no-repeat;
     background-position: top;
+    background-size: 1400px 715px;
+    
 }
 
 /* ----------------Блок header------------------*/
@@ -22,6 +24,7 @@ header {
     height: 85px;
     display: flex;
     align-items:center;
+
 }
 
 .nav-header {
@@ -59,6 +62,11 @@ header {
     margin-right:26px;
 }
 
+.list-menu-header li:hover {
+    color:#2c80e0;
+    text-decoration:underline;
+
+}
 
 .tel-header {
     margin-left: 46px; 
@@ -111,15 +119,18 @@ h2 {
     color: #533738;
     background-color: #CC8B86;
     text-decoration: none;
-    padding: 24px 66px 25px 66px;
-    
+    padding: 24px 66px 25px 66px; 
+}
+
+.text-main a:hover {
+    background-color: #cc726c;
 }
 
 .button-main {
     margin-top: 46px;
 }
-/* ---------------------Блок about-us------------------ */
 
+/* ---------------------Блок about-us------------------ */
 .about-us {
     width:1400px;
     height: 914px;  
@@ -200,7 +211,6 @@ h2 {
     gap:30px 20px;
 }
 
-
 /*-------Слайд с hover эффектом----------*/
 .hover-slaider {
     width:488px ;
@@ -237,6 +247,10 @@ h2 {
     color: #533738;
     text-decoration: none;
     display: block;
+}
+
+.box-slaider a:hover {
+    color: #eb0d14;   
 }
 
 .box-slaider{
@@ -307,12 +321,10 @@ h2 {
     margin-bottom: 40px;
 }
 
-
 .block-rabota {
     display: flex;
     justify-content:space-between;
 }
-
 
 .text-img-rabota {
     display: flex;
@@ -331,7 +343,6 @@ h2 {
 }
 
 .text-span-rabota {
-    
     font-weight: 500;
     font-size: 30px;
     line-height: 30px;
@@ -370,8 +381,12 @@ h2 {
     border-radius: 35px;
     background: #CC8B86;
     margin:236px 29px auto 29px;
-    cursor:pointer;
-    
+}
+
+
+.img-box-reviews:hover { /*Стрелки*/
+    background: #c75a52;
+    cursor:pointer; 
 }
 
 .img-arrow-reviews {
@@ -481,6 +496,12 @@ button {
     border: none;
     font-family: 'Montserrat', sans-serif;
 }
+
+button:hover {
+    background-color: #cc726c;
+    cursor:pointer;
+}
+
 /* -----------Блок footer-------------- */
 footer {
     height: 104px;
